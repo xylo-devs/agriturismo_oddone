@@ -49,7 +49,7 @@ export default function HomePage() {
           <div className="pres-row reveal">
             <div className="pres-row-media">
               {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img className="pres-photo" src="/images/sapore.png" alt="Prodotti del territorio: porcini, olio e conserve della casa" />
+              <img className="pres-photo" src="/images/dsc-009-a.jfif" alt="Prodotti del territorio: porcini, olio e conserve della casa" />
             </div>
             <div>
               <div className="pres-num">01 — Ristorazione</div>

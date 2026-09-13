@@ -37,7 +37,7 @@ export default function AlloggiPage() {
         <div className="pres-row flip reveal">
           <div className="pres-row-media">
             {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img className="pres-photo" src="/images/alloggi-benessere.jfif" alt="Collage degli alloggi, delle docce emozionali e dei boschi di Bardineto" />
+            <img className="pres-photo" src="/images/montaggio-benessere-2.jfif" alt="Collage degli alloggi, delle docce emozionali e dei boschi di Bardineto" />
           </div>
           <div>
             <div className="pres-num">Evoluzione premium</div>
