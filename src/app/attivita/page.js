@@ -9,11 +9,14 @@ export const metadata = {
 export default function AttivitaPage() {
   return (
     <div className="route-attivita">
-      <header className="section container pres-intro reveal">
-        <div className="overline">Vivi l&apos;outdoor</div>
-        <h1>Emozioni su misura<br />nella natura di <em>Bardineto</em>.</h1>
-        <p className="lede">All&apos;Agriturismo Oddone, la natura non si guarda solo dal finestrino: si vive sulla propria pelle. I nostri 93 ettari di tenuta privata — incastonati nella splendida cornice della Val Bormida e all&apos;ombra del Monte Carmo — sono un immenso parco giochi naturale a tua completa disposizione.</p>
-        <p className="body-text sub">Che tu stia cercando una scarica di adrenalina in sella, una cavalcata nel silenzio o la pace dei nostri boschi, abbiamo l&apos;avventura perfetta per farti innamorare di questo territorio sospeso tra il mare e le Alpi Liguri.</p>
+      <header className="container attivita-opening reveal">
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img src="/images/jpeg-1a.jfif" alt="" />
+        <div className="attivita-opening-text">
+          <h1>Emozioni su misura nella natura di Bardineto.</h1>
+          <p>All&apos;Agriturismo Oddone, la natura non si guarda solo dal finestrino: si vive sulla propria pelle. I nostri 93 ettari di tenuta privata — incastonati nella splendida cornice della Val Bormida e all&apos;ombra del Monte Carmo — sono un immenso parco giochi naturale a tua completa disposizione.</p>
+          <p>Che tu stia cercando una scarica di adrenalina in sella, una cavalcata nel silenzio o la pace dei nostri boschi, abbiamo l&apos;avventura perfetta per farti innamorare di questo territorio sospeso tra il mare e le Alpi Liguri.</p>
+        </div>
       </header>
 
       <section className="section container act" id="mtb">
@@ -69,7 +72,7 @@ export default function AttivitaPage() {
         <div className="act-row reveal">
           <div className="act-media">
             {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img className="act-photo" src="/images/attivita-cavalli.jfif" alt="Collage delle passeggiate a cavallo nella tenuta dell'Agriturismo Oddone" />
+            <img className="act-photo" src="/images/montaggio-cavalli-2.jfif" alt="Collage delle passeggiate a cavallo nella tenuta dell'Agriturismo Oddone" />
           </div>
           <div>
             <span className="act-kicker">03 · Il ritmo lento del &quot;wild&quot;</span>

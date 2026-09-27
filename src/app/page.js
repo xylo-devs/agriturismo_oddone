@@ -26,7 +26,7 @@ export default function HomePage() {
         <div className="pres-row reveal">
           <div className="pres-row-media">
             {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img className="pres-photo wide" src="/images/inizio.png" alt="La cascina e l'insegna Agriturismo Oddone a Bardineto" />
+            <img className="pres-photo wide" src="/images/montaggio-1.jfif" alt="Collage della cascina, della piscina e del ristorante dell'Agriturismo Oddone" />
           </div>
           <div>
             <span className="eyebrow">Le origini</span>
