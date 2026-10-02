@@ -51,8 +51,19 @@ export default function AttivitaPage() {
       <section className="section container act" id="trekking">
         <div className="act-row flip reveal">
           <div className="act-media">
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img className="act-photo" src="/images/attivita-trekking.jfif" alt="Collage dei cammini storici e dei sentieri di Bardineto" />
+            <video
+              className="act-video"
+              width="848"
+              height="480"
+              controls
+              playsInline
+              preload="none"
+              poster="/images/attivita-trekking.jfif"
+              aria-label="Video delle escursioni trekking a Bardineto"
+            >
+              <source src="/videos/trekking.mp4" type="video/mp4" />
+              Il tuo browser non supporta la riproduzione video. <a href="/videos/trekking.mp4">Scarica il video del trekking</a>.
+            </video>
           </div>
           <div>
             <span className="act-kicker">02 · A piedi</span>

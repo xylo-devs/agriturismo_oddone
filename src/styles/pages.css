@@ -156,6 +156,7 @@
   
 
 /* ===================== .route-attivita (attivita) ===================== */
+.route-attivita .act-video { display: block; width: 100%; height: auto; aspect-ratio: 53 / 30; object-fit: contain; background: var(--ink); }
 .route-attivita .attivita-opening { padding-top: clamp(24px, 5vw, 72px); padding-bottom: clamp(48px, 7vw, 96px); }
 .route-attivita .attivita-opening img { display: block; width: 100%; height: auto; }
 .route-attivita .attivita-opening-text { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0; }
