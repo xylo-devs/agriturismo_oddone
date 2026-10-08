@@ -1,44 +1,80 @@
-/* Button + link primitives */
-
 .btn {
-  display: inline-flex;
-  align-items: center;
-  gap: 10px;
-  padding: 14px 26px;
-  font-family: var(--sans);
-  font-size: 13px;
-  font-weight: 500;
-  letter-spacing: 0.10em;
-  text-transform: uppercase;
-  border: 1px solid var(--ink);
-  background: var(--ink);
-  color: var(--bone);
-  cursor: pointer;
-  transition: background 0.2s, color 0.2s, border-color 0.2s;
-  text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 14px 26px;
+    font-family: var(--sans);
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    border: 1px solid var(--ink);
+    background: var(--ink);
+    color: var(--bone);
+    cursor: pointer;
+    transition:
+        background 0.2s,
+        color 0.2s,
+        border-color 0.2s;
+    text-decoration: none;
 }
-.btn:hover { background: var(--terracotta-deep); border-color: var(--terracotta-deep); }
-.btn.btn-outline { background: transparent; color: var(--ink); }
-.btn.btn-outline:hover { background: var(--ink); color: var(--bone); }
-.btn.btn-light { background: transparent; color: var(--bone); border-color: var(--bone); }
-.btn.btn-light:hover { background: var(--bone); color: var(--ink); }
-.btn.btn-light-solid { background: var(--bone); color: var(--ink); border-color: var(--bone); }
-.btn.btn-light-solid:hover { background: var(--terracotta); border-color: var(--terracotta); color: var(--bone); }
-.btn .arrow { transition: transform 0.2s; }
-.btn:hover .arrow { transform: translateX(4px); }
+
+.btn:hover {
+    background: var(--terracotta-deep);
+    border-color: var(--terracotta-deep);
+}
+.btn.btn-outline {
+    background: transparent;
+    color: var(--ink);
+}
+.btn.btn-outline:hover {
+    background: var(--ink);
+    color: var(--bone);
+}
+.btn.btn-light {
+    background: transparent;
+    color: var(--bone);
+    border-color: var(--bone);
+}
+.btn.btn-light:hover {
+    background: var(--bone);
+    color: var(--ink);
+}
+.btn.btn-light-solid {
+    background: var(--bone);
+    color: var(--ink);
+    border-color: var(--bone);
+}
+.btn.btn-light-solid:hover {
+    background: var(--terracotta);
+    border-color: var(--terracotta);
+    color: var(--bone);
+}
+.btn .arrow {
+    transition: transform 0.2s;
+}
+.btn:hover .arrow {
+    transform: translateX(4px);
+}
 
 .text-link {
-  display: inline-flex;
-  align-items: center;
-  gap: 10px;
-  font-size: 13px;
-  font-weight: 500;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  color: var(--terracotta-deep);
-  padding-bottom: 6px;
-  border-bottom: 1px solid currentColor;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--terracotta-deep);
+    padding-bottom: 6px;
+    border-bottom: 1px solid currentColor;
 }
-.text-link.light { color: var(--terracotta-tint); }
-.text-link .arrow { transition: transform 0.2s; }
-.text-link:hover .arrow { transform: translateX(4px); }
+.text-link.light {
+    color: var(--terracotta-tint);
+}
+.text-link .arrow {
+    transition: transform 0.2s;
+}
+.text-link:hover .arrow {
+    transform: translateX(4px);
+}
