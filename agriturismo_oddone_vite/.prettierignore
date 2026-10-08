@@ -1,0 +1,7 @@
+node_modules
+dist
+dist-ssr
+public/images
+public/videos
+public/menu-del-mese.pdf
+src/assets/hero.png

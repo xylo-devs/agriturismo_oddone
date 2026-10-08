@@ -1,0 +1,29 @@
+:root {
+    --terracotta: oklch(0.56 0.12 38);
+    --terracotta-deep: oklch(0.42 0.1 36);
+    --terracotta-tint: oklch(0.78 0.1 50);
+    --olive: oklch(0.48 0.07 118);
+    --olive-deep: oklch(0.34 0.06 120);
+
+    --bone: oklch(0.96 0.012 80);
+    --cream: oklch(0.93 0.022 78);
+    --sand: oklch(0.88 0.028 75);
+    --line: oklch(0.82 0.02 75);
+
+    --ink: oklch(0.22 0.015 60);
+    --ink-soft: oklch(0.38 0.014 60);
+    --ink-mute: oklch(0.55 0.02 70);
+
+    --dark-bg: oklch(0.2 0.018 60);
+    --dark-bg-2: oklch(0.32 0.022 60);
+    --dark-line: oklch(0.32 0.018 60);
+    --dark-line-2: oklch(0.42 0.022 60);
+
+    --serif: "Cormorant Garamond", "EB Garamond", Georgia, serif;
+    --sans: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    --mono: "JetBrains Mono", ui-monospace, "SF Mono", monospace;
+
+    --max: 1320px;
+    --pad: clamp(20px, 4vw, 56px);
+    --gap-section: clamp(80px, 10vw, 140px);
+}
