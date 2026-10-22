@@ -23,6 +23,7 @@ jobs:
           version: 12.9.0
           runtime: node@22
           cache: true
+          install: false
 
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
@@ -35,5 +36,6 @@ jobs:
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          packageManager: npm
           command: pages deploy dist --project-name=agriturismo-oddone --branch=main
           gitHubToken: ${{ secrets.GITHUB_TOKEN }}
