@@ -1,9 +1,54 @@
 /* Component styles for Agriturismo Oddone */
 
+/* ===== Site update notice ===== */
+.site-notice {
+    --site-notice-height: 42px;
+    position: relative;
+    z-index: 51;
+    min-height: var(--site-notice-height);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 4px 9px;
+    padding: 8px var(--pad);
+    background: var(--olive-deep);
+    color: var(--bone);
+    font-size: 11px;
+    line-height: 1.4;
+    text-align: center;
+}
+.site-notice-dot {
+    width: 8px;
+    height: 8px;
+    flex: 0 0 8px;
+    border-radius: 50%;
+    background: var(--terracotta-tint);
+    box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.1);
+}
+.site-notice strong {
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+.site-notice a {
+    color: var(--bone);
+    font-weight: 600;
+    text-decoration: underline;
+    text-decoration-color: rgba(255, 255, 255, 0.55);
+    text-underline-offset: 3px;
+}
+.site-notice a:hover {
+    text-decoration-color: currentColor;
+}
+.site-notice a:focus-visible {
+    outline: 2px solid var(--bone);
+    outline-offset: 3px;
+}
+
 /* ===== Nav ===== */
 .nav {
     position: absolute;
-    top: 0;
+    top: 42px;
     left: 0;
     right: 0;
     z-index: 50;
@@ -16,6 +61,7 @@
 }
 .nav.scrolled {
     position: fixed;
+    top: 0;
     background: rgba(20, 17, 14, 0.92);
     backdrop-filter: blur(12px);
     padding: 16px var(--pad);
@@ -34,6 +80,7 @@
 /* On pages without a dark hero, the nav starts dark-on-cream */
 .nav.solid {
     position: relative;
+    top: auto;
     color: var(--ink);
     padding: 20px var(--pad);
     background: var(--bone);
@@ -385,8 +432,22 @@ body.nav-open {
         display: none;
     } /* moved to mobile menu */
 }
+@media (max-width: 760px) {
+    .site-notice {
+        --site-notice-height: 56px;
+    }
+    .nav:not(.solid) {
+        top: 56px;
+    }
+}
 @media (max-width: 600px) {
+    .site-notice {
+        gap: 3px 7px;
+        padding: 8px 16px;
+        font-size: 10px;
+    }
     .nav {
+        top: 56px;
         padding: 20px var(--pad);
     }
     .nav.scrolled {

@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import { BrowserRouter, Navigate, Route, Routes, useLocation } from "react-router-dom";
 import Nav from "./components/Nav";
+import SiteNotice from "./components/SiteNotice";
 import Footer from "./components/Footer";
 import RevealController from "./components/RevealController";
 import { PAGE_METADATA } from "./metadata.js";
@@ -41,6 +42,7 @@ export function Site() {
     return (
         <>
             <RouteEffects />
+            <SiteNotice />
             <Nav />
             <Routes>
                 <Route path="/" element={<HomePage />} />
